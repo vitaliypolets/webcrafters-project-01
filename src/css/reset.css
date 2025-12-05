@@ -38,6 +38,20 @@ img {
 
 }
 
+/* Контейнер для picture */
+.picture-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  line-height: 0;
+}
+
 button {
   cursor: pointer;
   border: none;
