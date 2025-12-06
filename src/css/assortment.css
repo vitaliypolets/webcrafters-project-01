@@ -1,28 +1,8 @@
-:root {
-    --color-neutral-darkest: #030a06;
-    --color-neutral-lighter: #d9dad9;
-    --color-white: #fff;
-    --color-neutral-lightest: #f2f2f2;
-    --color-neutral-light: #b3b5b4;
-    --color-neutral: #818482;
-    --color-neutral-dark: #4e5350;
-    --color-neutral-darker: #1c221e;
-    --color-emerald-lightest: #ebf8ed;
-    --color-emerald-lighter: #d7f2db;
-    --color-emerald-light: #75d281;
-    --color-emerald: #3ac04c;
-    --color-emerald-dark: #2e993c;
-    --color-emerald-darker: #174c1e;
-    --color-emerald-darkest: #113916;
-    --color-error-red: #d64040;
-    --opacity-transparent: rgba(255, 255, 255, 0);
-    --font-family: "Fira Sans", sans-serif;
-    --second-family: "Comfortaa", sans-serif;
-}
 
 .assortment {
     padding-top: 32px;
     padding-bottom: 32px;
+    
 }
 .assortment-container {
 min-width: 288px;
@@ -41,16 +21,18 @@ min-width: 288px;
 .assortment-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     flex-direction: row;
     gap: 40px;
 
 }
-.assortment-item{
-  display: flex;
- flex-direction: column;
+.assortment-item {
+    display: flex;
+    flex-direction: column;
+
 }
+
 .assortment-list-title {
     font-weight: 600;
     font-size: 18px;
@@ -58,13 +40,20 @@ min-width: 288px;
     text-align: center;
     margin-top: 16px;
 }
+.centered-content {
+    text-align: center;
+    max-width: 288px;
+    margin-bottom: 16px;
+
+}
 .assortment-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.6;
     text-align: center;
     margin-bottom: 8px;
-    max-width: 100%;
+    width: 100%;
+    
 
 }
 .assortment-price-text {
@@ -72,7 +61,7 @@ min-width: 288px;
     font-size: 20px;
     line-height: 1.6;
     text-align: center;
-    margin-bottom: 16px;
+     margin-top: auto;
 }
 .assortment-button {
     display: block;
@@ -83,30 +72,24 @@ min-width: 288px;
     height: 40px;
     margin-top: auto;
 }
- .centered-content {
-     text-align: center;
-     max-width: 100%;
- }
- .picture-container{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-picture {
-    display: block;
-    width: 100%;
-    height: auto;
-    line-height: 0;
+ 
+.portfolio-image {
+border-radius: 9%;
 }
 
 @media only screen and (min-width: 768px) {
 .assortment {
-        padding-top: 64px;
-        padding-bottom: 64px;
-    }
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.centered-content {
+    max-width: 340px;
+ 
+}
 .assortment-list{
     column-gap: 24px;
-    row-gap: 48px;  
+    row-gap: 48px;
+
 }
 .assortment-item {
       width: calc((100% - 24px) / 2);
@@ -114,13 +97,25 @@ picture {
   }
  
 }
+@media only screen and (min-width: 1440px) {
 
 
+.assortment-list {
+    column-gap: 24px;
+        row-gap: 64px;
+}
+.centered-content {
+max-width: 310px;
+}
+.assortment-text{
+    text-align: center;
+}
 
+.assortment-item {
+    width: calc((100% - 72px) / 4);
 
-
-
-
+  }
+}
 
              
 
@@ -134,84 +129,3 @@ picture {
 
 
 
-
-
-
-
-/* .assortment {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color:#ebf8ed;
-}
-
-.assortment-title {
-    margin-bottom: 32px;
-    text-align: center;
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-
-}
-.assortment-list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 40px;
-
-    }
-    
-.assortment-item {
-    display: flex;
- 
-    justify-content: center;
-    flex-direction: column; 
-    gap: 16px;
-  
-    }
-.assortment-list-title {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
-
-
-}
-.assortment-text {
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.6;
-    text-align: center;
-    margin-bottom: 8px;
-    max-width: 100%;
-   
-}
-.assortment-price-text {
-
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.6;
-    text-align: center;
-    
-}
-.assortment-button{
-    border: 1px solid #030a06;
-    border-radius: 6px;
-    padding: 8px 20px;
-    width: 288px;
-    height: 40px;
-}
-.asd{
-display: flex;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-}
-.container-auto{
-    margin: 0 auto;
-text-align: center;
-}  */
