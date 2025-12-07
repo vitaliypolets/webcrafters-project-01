@@ -1,0 +1,165 @@
+.natural-section {
+    position: relative;
+    background:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%),
+        url("../images/mobile-feature@1x.jpg") center / cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+   
+}
+
+/* Mobile 2x */
+@media (min-resolution: 2dppx) {
+    .natural-section {
+    background:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%),
+            url("../images/mobile-feature@2x.jpg") center / cover no-repeat;
+    }
+}
+
+@media (min-width: 768px) and (min-resolution: 2dppx) {
+    .natural-section {
+    background:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%),
+                url("../images/tablet-feature@2x.jpg") center / cover no-repeat;
+    padding: 0 32px;
+            }
+}
+
+/* Desktop */
+
+@media (min-width: 1440px) and (min-resolution: 2dppx) {
+    .natural-section {
+    background:
+            linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%),
+            url("../images/desktop-feature@2x.jpg") center / cover no-repeat;
+    padding: 0 64px;
+        }
+}
+
+.natural-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px 0;
+    width: 100%;
+}
+
+.natural-title {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.natural-subtitle {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+
+}
+
+.natural-description {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    max-width: 550px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    hyphens: auto;
+
+}
+
+@media (min-width: 768px) {
+
+    .natural-section {
+    
+            background:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%),
+                url("../images/tablet-feature@1x.jpg") center / cover no-repeat;
+    
+            /* min-height: 500px; */
+            
+        }
+
+    .natural-container {
+        padding: 80px 0px;
+             
+}
+    
+    .natural-content{
+         max-width: 600px;
+        margin: 0 auto;
+}
+    .natural-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .natural-subtitle {
+        font-size: 36px;
+        margin-bottom: 24px;
+        max-width: 500px;
+    }
+
+    .natural-description {
+        font-size: 18px;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .natural-section {
+            background:
+                linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 40%),
+                url("../images/desktop-feature@1x.jpg") center / cover no-repeat;
+       
+        /* min-height: 700px; */
+        }
+    
+   .natural-content {
+       max-width: 700px;
+   }
+
+    .natural-container {
+        padding: 112px 0px;
+    }
+
+    .natural-title {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .natural-subtitle {
+        font-size: 56px;
+        margin-bottom: 24px;
+        max-width: 600px;
+    }
+
+    .natural-description {
+            
+            font-size: 18px;
+            max-width: 550px;
+        }
+}

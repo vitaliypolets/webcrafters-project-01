@@ -16,7 +16,7 @@
     --color-emerald-darkest: #113916;
     --color-error-red: #d64040;
     --opacity-transparent: rgba(255, 255, 255, 0);
-    --font-family: "Fira Sans", sans-serif;
+    --font-primary: "Fira Sans", sans-serif;
     --second-family: "Comfortaa", sans-serif;
 
 /* Глобальні стилі для тега body  */

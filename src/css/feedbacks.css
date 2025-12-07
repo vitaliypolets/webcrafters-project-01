@@ -1,0 +1,119 @@
+.reviews-title {
+
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--color-neutral-darkest);
+    margin: 32px 0;
+
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 288px;
+    min-height: 158px;
+    padding: 0;
+}
+
+.stars-list {
+    display: flex;
+    justify-content: left;
+    gap: 4px;
+    margin-bottom: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.star {
+    fill: var(--color-emerald);
+    width: 24px;
+    height: 24px;
+}
+
+.review-text {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color:var(--color-neutral-darkest);
+    text-align: left;
+    
+}
+
+.review-author {
+    font-family: var(--font-primary);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--color-neutral-darkest);
+        text-align: left;
+}
+
+@media screen and (min-width:768px) {
+.reviews-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 32px 24px;
+     
+ }
+.review-item {
+        width: calc((100% - 24px) / 2);
+        /* min-width: 340px; */
+        /* 2 колонки */
+        min-height: 190px;
+    }
+
+    .reviews-title {
+        font-size: 2rem;
+    }
+
+    .stars-list {
+        gap: 4px;
+        
+    }
+}
+
+@media screen and (min-width:1440px) {
+/* .reviews-container {
+width: 24px;
+
+} */
+
+.reviews-list {
+align-items: flex-start;
+    justify-content: flex-start;
+        max-width: 1440px;
+        margin: 0 auto;
+        gap: 24px
+    }
+
+    .review-item {
+        width: calc((100% - 3 * 24px) / 4);
+        min-width: 310px;
+       
+        /* min-height: 310px; */
+        /* padding: 28px; */
+                /* min-height: 220px; */
+    }
+
+}
+
+
+

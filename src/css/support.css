@@ -1,34 +1,31 @@
 
 
-.cta-form{
+.cta-form .container{
     padding-top: 32px;
     padding-bottom: 32px;
-    max-width:320px;
-
-}
-.support-container {
+    max-width: 320px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
+
 .form-title{
     font-family: var(--second-family);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.01em;
-    color: var(--color-scheme-1-text);
+    color: var(--color-neutral-darkest);
     max-width: 288px;
     margin-bottom: 24px;
 }
 
 .form-text{
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
-    color: var(--color-scheme-1-text);
+    color: var(--color-neutral-darkest);
     margin-bottom:32px;
 }
 
@@ -42,21 +39,23 @@
 .label-field{
     display: block;
     margin-bottom: 8px;
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--color-scheme-1-text);
+    color: var(--color-neutral-darkest);
 }
 
 .text-field,
 .comment-textarea{
     display: block;
     width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
-    border: 1px solid var(--opacity-neutral-darkest-15);
+    border: 1px solid rgba(3, 10, 6, 0.15);
     border-radius: 6px;
     outline: none;
+    color: rgba(3, 10, 6, 0.6);
     
 }
 .text-field{
@@ -65,27 +64,34 @@
 .comment-textarea{
     padding: 12px 0 12px 12px;
     height: 180px;
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--opacity-neutral-darkest-60);
+    color: var(--color-neutral-darkest);
+    resize: none;
 }
 
 
 .form-btn{
-    border: 1px solid #030a06;
+    border: 1px solid var(--color-neutral-darkest);
     border-radius: 6px;
     padding: 12px 24px;
     width: 288px;
     height: 50px;
     background-color:var(--color-neutral-darkest);
 margin-bottom: 24px;
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-white);
+}
+
+.form-btn:active {
+    background-color: var(--color-emerald-darkest);
+    border-color: var(--color-emerald-darkest);
+    opacity: 1;
 }
 
 /* #region :valid/:invalid */
@@ -96,7 +102,7 @@ margin-bottom: 24px;
 }
 
 .form .text-field:not(:placeholder-shown):valid,
-.form .comment-textarea:valid {
+.form .comment-textarea:not(:placeholder-shown):valid {
     border-color: var(--color-emerald);
 }
 
@@ -120,13 +126,14 @@ margin-bottom: 24px;
 .form-img {
     display: block;
     width: 100%;
-    height: 428px;
+    height: 428px; 
     min-height: 288px;
     background-image: url("../images/form-img/form-img-m.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 12px;
+    border-radius: 40px;
+    margin: 0;
 }
 
 
@@ -138,15 +145,14 @@ margin-bottom: 24px;
 
 
 @media only screen and (min-width: 768px) {
-    .cta-form {
+    .cta-form .container {
         max-width: 768px;
-        width: 100%;
-    }
-    .support-container {
         padding: 64px 32px;
         display: block;
+        margin: 0 auto;
+        width: 100%;
     }
-
+  
     .form-text,
     .form-field-wrapper,
     .form-btn,
@@ -158,15 +164,20 @@ margin-bottom: 24px;
     .form-title{
         max-width: 468px;
     }
-
-  
+    
     .form-img {
         width: 704px;
         background-image: url("../images/form-img/form-img-t.jpg");
     }
+
     .form-btn {
         width: 249px;
     }
+   .comment-textarea,
+   .text-field {
+       width: 100%;
+       box-sizing: border-box;
+   }
 }
     
 
@@ -183,34 +194,56 @@ margin-bottom: 24px;
 
 @media only screen and (min-width: 1440px) {
 
-    .cta-form {
+    .cta-form .container {
         max-width: 1440px;
         width: 100%;
-    }
-
-    .support-container {
-        display: block;
         padding: 64px 64px;
-
     }
-    .form-image-wrapper{
+
+    .support-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         gap: 24px;
     }
-.form {
-    width: 644px;
+
+    .form-wrapper {
+        width: 644px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .form-title {
+        font-size: 48px;
+        line-height: 1.2;
+        max-width: 644px;
+    }
+    .form-img {
+        width: 644px;
+        height: auto;
+        align-self: stretch;
+        background-image: url("../images/form-img/form-img-d.jpg");
+    }
+    .form-btn {
+        width: 198px;
+        margin-bottom: 78px;
+    }
+    .form-btn:hover,
+    .form-btn:focus{
+        background-color: var(--color-neutral-darkest);
+        border-color: 1px solid var(--color-neutral-darkest);
+        opacity: 0.5;
+        outline: none;
+    }
+
+
 }
-.form-title {
-    font-size: 48px;
-    line-height: 1.2;
 
-    max-width: 644px;
-   
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .form-img {
+        background-image: url("../images/form-img/form-img-d@2x.jpg");
+    }
 }
-
-
-}
-
 
