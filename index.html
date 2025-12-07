@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/webcrafters-project-01/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/webcrafters-project-01/assets/index-D8Wy1agj.css">
+    <link rel="stylesheet" crossorigin href="/webcrafters-project-01/assets/index-CRMPdTBe.css">
   </head>
   <body>
     <header class="header-section">
@@ -502,17 +502,52 @@
 
       <section class="gallery">
   <div class="container">
-    <h2 class="section-title">Галерея зображень</h2>
+    <h2 class="gallery-title">Галерея зображень</h2>
+
+    <p class="gallery-text">EcoTotes у повсякденному житті</p>
 
     <div class="gallery-grid">
-      <img src="/images/g1.jpg" alt="Gallery" />
-      <img src="/images/g2.jpg" alt="Gallery" />
-      <img src="/images/g3.jpg" alt="Gallery" />
-      <img src="/images/g4.jpg" alt="Gallery" />
+      <ul class="gallery-list">
+        <li class="gallery-list-item">
+          <picture class="gallery-list-img">
+            <source media="(min-width: 1440px)" srcset="../images/gallery-img/desktop-gallery-1@1.jpg 1x, ../images/gallery-img/desktop-gallery-1@2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../images/gallery-img/tablet-gallery-1@1.jpg 1x, ../images/gallery-img/tablet-gallery-1@2.jpg 2x">
+            <source media="(max-width: 767px)" srcset="../images/gallery-img/mobile-gallery-1@1.jpg 1x, ../images/gallery-img/mobile-gallery-1@2.jpg 2x">
+            <img src="../images/gallery-img/mobile-gallery-1@1.jpg" width="288" height="288"
+              alt="Еко-сумка в затишній кав'ярні">
+          </picture>
+        </li>
+        <li class="gallery-list-item">
+          <picture class="gallery-list-img">
+            <source media="(min-width: 1440px)" srcset="../images/gallery-img/desktop-gallery-2@1.jpg 1x, ../images/gallery-img/desktop-gallery-2@2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../images/gallery-img/tablet-gallery-2@1.jpg 1x, ../images/gallery-img/tablet-gallery-2@2.jpg 2x">
+            <source media="(max-width: 767px)" srcset="../images/gallery-img/mobile-gallery-2@1.jpg 1x, ../images/gallery-img/mobile-gallery-2@2.jpg 2x">
+            <img src="../images/gallery-img/mobile-gallery-2@1.jpg" width="288" height="288"
+              alt="Еко-сумка у міському пейзажі" />
+          </picture>
+        </li>
+        <li class="gallery-list-item">
+          <picture class="gallery-list-img">
+            <source media="(min-width: 1440px)" srcset="../images/gallery-img/desktop-gallery-3@1.jpg 1x, ../images/gallery-img/desktop-gallery-3@2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../images/gallery-img/tablet-gallery-3@1.jpg 1x, ../images/gallery-img/tablet-gallery-3@2.jpg 2x">
+            <source media="(max-width: 767px)" srcset="../images/gallery-img/mobile-gallery-3@1.jpg 1x, ../images/gallery-img/mobile-gallery-3@2.jpg 2x">
+            <img src="../images/gallery-img/mobile-gallery-3@1.jpg" width="288" height="288"
+              alt="Еко-сумка у природному середовищі" />
+          </picture>
+        </li>
+        <li class="gallery-list-item">
+          <picture class="gallery-list-img">
+            <source media="(min-width: 1440px)" srcset="../images/gallery-img/desktop-gallery-4@1.jpg 1x, ../images/gallery-img/desktop-gallery-4@2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="../images/gallery-img/tablet-gallery-4@1.jpg 1x, ../images/gallery-img/tablet-gallery-4@2.jpg 2x">
+            <source media="(max-width: 767px)" srcset="../images/gallery-img/mobile-gallery-4@1.jpg 1x, ../images/gallery-img/mobile-gallery-4@2.jpg 2x">
+            <img src="../images/gallery-img/mobile-gallery-4@1.jpg" width="288" height="288"
+              alt="Еко-сумка наповнена овочами" />
+          </picture>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
-
       <section id="feedbacks" class="reviews-section">
   <div class="container reviews-container">
     <h2 class="reviews-title">Що говорять наші клієнти</h2>
