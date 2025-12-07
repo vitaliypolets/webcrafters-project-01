@@ -15,17 +15,17 @@
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.01em;
-    color: var(--color-scheme-1-text);
+    color: var(--color-neutral-darkest);
     max-width: 288px;
     margin-bottom: 24px;
 }
 
 .form-text{
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
-    color: var(--color-scheme-1-text);
+    color: var(--color-neutral-darkest);
     margin-bottom:32px;
 }
 
@@ -39,11 +39,11 @@
 .label-field{
     display: block;
     margin-bottom: 8px;
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--color-scheme-1-text);
+    color: var(--color-neutral-darkest);
 }
 
 .text-field,
@@ -51,9 +51,10 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
-    border: 1px solid var(--opacity-neutral-darkest-15);
+    border: 1px solid rgba(3, 10, 6, 0.15);
     border-radius: 6px;
     outline: none;
+    color: rgba(3, 10, 6, 0.6);
     
 }
 .text-field{
@@ -62,27 +63,33 @@
 .comment-textarea{
     padding: 12px 0 12px 12px;
     height: 180px;
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
-    color: var(--opacity-neutral-darkest-60);
+    color: var(--color-neutral-darkest);
 }
 
 
 .form-btn{
-    border: 1px solid #030a06;
+    border: 1px solid var(--color-neutral-darkest);
     border-radius: 6px;
     padding: 12px 24px;
     width: 288px;
     height: 50px;
     background-color:var(--color-neutral-darkest);
 margin-bottom: 24px;
-    font-family: var(--font-family);
+    font-family: var(--font-primary);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-white);
+}
+
+.form-btn:active {
+    background-color: var(--color-emerald-darkest);
+    border-color: var(--color-emerald-darkest);
+    opacity: 1;
 }
 
 /* #region :valid/:invalid */
@@ -93,7 +100,7 @@ margin-bottom: 24px;
 }
 
 .form .text-field:not(:placeholder-shown):valid,
-.form .comment-textarea:valid {
+.form .comment-textarea:not(:placeholder-shown):valid {
     border-color: var(--color-emerald);
 }
 
@@ -215,6 +222,13 @@ margin-bottom: 24px;
     .form-btn {
         width: 198px;
         margin-bottom: 78px;
+    }
+    .form-btn:hover,
+    .form-btn:focus{
+        background-color: var(--color-neutral-darkest);
+        border-color: 1px solid var(--color-neutral-darkest);
+        opacity: 0.5;
+        outline: none;
     }
 
 
