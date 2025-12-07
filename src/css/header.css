@@ -61,51 +61,25 @@
     line-height: 1.6;
     display: block;
     padding: 23px 0;
-    position: relative;
-    overflow: hidden;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .link::after,
-  .mail-tel::after {
-    position: absolute;
-    content: '';
-    border-radius: 5px;
-    width: 100%;
-    height: 1px;
-    background-color: var(--text-main);
-    left: 0;
-    bottom: 7px;
-    transform: translateX(-100%);
+  .link:hover,
+  .link:focus,
+  .mail-tel:hover,
+  .mail-tel:focus {
+    text-decoration: underline 1px;
+    text-underline-offset: 8px;
   }
 
-  .link:hover::after,
-  .link:focus::after,
-  .link.active-page::after,
-  .mail-tel:hover::after,
-  .mail-tel:focus::after,
-  .mail-tel.active-page::after {
-    background-color: var(--text-main);
-    transform: translateX(0);
-  }
-
-  .link.active-page::after,
-  .mail-tel.active-page::after {
-    background-color: var(--color-emerald);
-  }
-
-  .link.active-page::after,
-  .mail-tel.active-page::after {
-    transform: translateX(0);
-  }
-
-  .link::after,
-  .mail-tel::after {
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .active-page {
+  .link:active,
+  .mail-tel:active {
+    text-decoration: underline 1px var(--color-emerald);
+    text-underline-offset: 8px;
     color: var(--color-emerald);
+  }
+
+  .link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .contacts-list {
@@ -216,10 +190,6 @@
   margin-top: auto;
 }
 
-.mobile-link.mobail-active-page::after {
-  background-color: var(--color-emerald);
-}
-
 .mobile-contacts-list {
   display: flex;
   flex-direction: column;
@@ -230,24 +200,25 @@
 .mobile-mail-tel {
   color: var(--text-main);
   line-height: 1.6;
+}
+
+.mobile-link,
+.mobile-mail-tel {
+  color: var(--text-main);
+  line-height: 1.6;
   display: inline-block;
   position: relative;
 }
 
-.mobile-link.mobail-active-page::after,
-.mobile-mail-tel.mobail-active-page::after {
-  position: absolute;
-  content: '';
-  border-radius: 5px;
-  width: 100%;
-  height: 1px;
-  background-color: var(--color-emerald);
-  left: 0;
-  bottom: -7px;
+.mobile-link:active,
+.mobile-mail-tel:active {
+  text-decoration: underline 1px var(--color-emerald);
+  text-underline-offset: 8px;
+  color: var(--color-emerald);
 }
 
-.mobail-active-page {
-  color: var(--color-emerald);
+.mobile-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1440px) {
