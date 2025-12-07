@@ -2,9 +2,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.advantages .container {
-    max-width: 320px;
-}
 .advantages-subtitle {
     font-weight: 600;
     line-height: 1.5;
@@ -50,9 +47,6 @@
         padding-top: 64px;
         padding-bottom: 64px;
     }
-    .advantages .container {
-        max-width: 768px;
-    }
     .advantages-subtitle {
         margin-bottom: 16px;
     }
@@ -88,10 +82,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .advantages .container {
-        max-width: 1440px;
-        padding: 0 64px;
-    }
     .advantages-title {
         font-size: 48px;
     }
