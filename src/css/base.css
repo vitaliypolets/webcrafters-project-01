@@ -36,13 +36,12 @@ body {
     min-height: 100vh;
     min-width: 320px;
 
+}
 
 .no-scroll {
-        overflow: hidden;
-        height: 100vh;
-        touch-action: none;
-        /* головне! блокує скрол пальцем */
-        overscroll-behavior: none;
-        /* блокує "підскоки" */
-    }
+    overflow: hidden;
+    height: 100vh;
+    touch-action: none;
+    overscroll-behavior: none;
+    
 }
