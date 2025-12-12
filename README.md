@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="./src/images/desktop-feature@2x.webp" alt="WebCrafters Logo" width="100%" height="462">
+  <img src="./src/images/desktop-feature@2x.webp" alt="WebCrafters Logo" width="100%" height="400">
 </p>
 
 EcoTote — це адаптивний вебсайт бренду еко-сумок, створений командою WebCrafters
@@ -21,22 +21,24 @@ Team.
 
 ## 📑 Зміст
 
-- [Проєкт](#проєкт)
-- [Технології](#технології)
-- [Функціонал](#функціонал)
-- [Структура репозиторію](#структура-репозиторію)
-- [Встановлення](#встановлення)
+- [Проєкт](#proekt)
+- [Технології](#tehnology)
+- [Функціонал](#features)
+- [Структура репозиторію](#repository-structure)
+- [Встановлення](#installation)
 - [NPM Scripts](#npm-scripts)
 - [Gulp-команди](#gulp-команди)
 - [Git Flow](#git-flow)
 - [Conventional Commits](#conventional-commits)
-- [Робота з HTML Partials](#робота-з-html-partials)
-- [Адаптивність](#адаптивність)
-- [Деплой](#деплой)
-- [Учасники команди](#учасники-команди)
-- [Ліцензія](#ліцензія)
+- [Робота з HTML Partials](#html-partials)
+- [Адаптивність](#responsiveness)
+- [Деплой](#deployment)
+- [Учасники команди](#team-members)
+- [Контакти](#contact)
 
 ---
+
+<a name="proekt"></a>
 
 # 🌱 Проєкт
 
@@ -57,11 +59,12 @@ EcoTote — це сайт бренду еко-сумок з чітким фок�
 - каталог
 - відгуки
 - форму підписки
-- модальне вікно
 - мобільне меню
 - футер з соціальними мережами
 
 ---
+
+<a name="tehnology"></a>
 
 # 🛠 Технології
 
@@ -84,6 +87,8 @@ EcoTote — це сайт бренду еко-сумок з чітким фок�
 
 ---
 
+<a name="features"></a>
+
 # ⚡ Функціонал
 
 - 🔥 Адаптивна верстка 320px → 1200px+
@@ -92,40 +97,50 @@ EcoTote — це сайт бренду еко-сумок з чітким фок�
 - 🖼 Галерея та інтерактивні ефекти
 - 💬 Секція відгуків
 - 📨 Форма підписки (HTML validation)
-- 🪟 Модальне вікно
 - ⚡ Оптимізація: WebP, мінімізація CSS/JS, HTML include
 
 ---
+
+<a name="repository-structure"></a>
 
 # 📁 Структура репозиторію
 
 ```
 project/
 │   README.md
-│   gulpfile.js
+│   GIT_INSTRUKTSIYA.md
+│   vite.config.js
 │   package.json
+│   prettierrc.json
 │
 ├── src/
 │   ├── index.html
 │   ├── partials/
+│   │     about.html
+│   │     advantages.html
+│   │     assortments.html
+│   │     feedbasks.html
+│   │     footer.html
+│   │     gallery.html
 │   │     header.html
 │   │     hero.html
-│   │     about.html
-│   │     products.html
-│   │     gallery.html
-│   │     reviews.html
-│   │     footer.html
-│   │     modal.html
-│   │     mobile-menu.html
-│   │
+│   │     support.html
 │   ├── css/
-│   │     index.scss
-│   │     components/
-│   │     utils/
+│   │     about.css
+│   │     advanta.css
+│   │     aassortments.css
+│   │     feedbasks.css
+│   │     footer.css
+│   │     gallery.css
+│   │     header.css
+│   │     support.css
+│   │     base.css
+│   │     main.css
+│   │     reset.css
 │   │
 │   ├── js/
 │   │     main.js
-│   │     menu.js
+│   │     burger.js
 │   │
 │   └── images/
 │
@@ -133,6 +148,8 @@ project/
 ```
 
 ---
+
+<a name="installation"></a>
 
 # 🧩 Встановлення
 
@@ -151,6 +168,8 @@ npm install
 
 ---
 
+<a name="npm-scripts"></a>
+
 # 📦 NPM Scripts
 
 ```json
@@ -166,6 +185,8 @@ npm install
 
 ---
 
+<a name="gulp-commands"></a>
+
 # 🚀 Gulp-команди
 
 | Команда       | Опис                          |
@@ -177,13 +198,15 @@ npm install
 
 ---
 
+<a name="git-flow"></a>
+
 # 🌳 Git Flow
 
 ### Основні гілки:
 
 ```
 main        → продакшн
-develop     → робоча гілка команди
+gh-pages     → робоча гілка команди
 ```
 
 ### Робочі гілки:
@@ -197,11 +220,13 @@ hotfix/<терміновий-фікс>
 ### Правила:
 
 1. Кожна фіча → своя гілка
-2. Після завершення → Pull Request у `develop`
+2. Після завершення → Pull Request у `gh-pages`
 3. Team Lead перевіряє → merge
 4. У `main` вливається тільки реліз
 
 ---
+
+<a name="conventional-commits"></a>
 
 # ✍️ Conventional Commits
 
@@ -223,6 +248,8 @@ feat: add hero section mobile layout
 
 ---
 
+<a name="html-partials"></a>
+
 # 🧱 Робота з HTML Partials
 
 Файли лежать у:
@@ -242,6 +269,8 @@ src/partials/
 
 ---
 
+<a name="responsiveness"></a>
+
 # 📱 Адаптивність
 
 Проєкт реалізовано у підході:
@@ -260,6 +289,8 @@ src/partials/
 
 ---
 
+<a name="deployment"></a>
+
 # 🌍 Деплой
 
 Деплой виконується командою:
@@ -271,10 +302,13 @@ gulp deploy
 Після цього проєкт буде доступний за посиланням:
 
 ```
-https://vitaliypolet.github.io/webcrafters-project-01.git
+https://vitaliypolets.github.io/webcrafters-project-01
+
 ```
 
 ---
+
+<a name="team-members"></a>
 
 # 👥 Учасники команди WebCrafters Team
 
@@ -317,11 +351,15 @@ https://vitaliypolet.github.io/webcrafters-project-01.git
 
 ---
 
+<a name="licence"></a>
+
 # 📄 Ліцензія
 
 MIT License © WebCrafters Team
 
 ---
+
+<a name="contact"></a>
 
 # 📞 Контакти
 
