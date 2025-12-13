@@ -5,11 +5,19 @@
 **Гасло:** “Зробіть свій вибір екологічним!”
 
 <p align="center">
-  <img src="./src/images/companylogo.png" alt="EcoTote Banner" width="112" height="48">
+  <a href="https://vitaliypolets.github.io/webcrafters-project-01/" target="_blank" rel="noopener noreferrer">
+    <img src="./src/images/companylogo.png" alt="WebCrafters Logo" width="112" height="48">
+  </a>
 </p>
 
 <p align="center">
-  <img src="./src/images/desktop-feature@2x.webp" alt="WebCrafters Logo" width="100%" height="400">
+  <a href="https://vitaliypolets.github.io/webcrafters-project-01/" target="_blank" rel="noopener noreferrer">
+    <img src="./src/images/desktop-feature@2x.webp" alt="EcoTote Banner" width="100%" height="400">
+  </a>
+</p>
+
+<p align="center">
+  <strong>🎯 Клікніть на будь-яке зображення вище, щоб перейти на живий сайт проекту!</strong>
 </p>
 
 EcoTote — це адаптивний вебсайт бренду еко-сумок, створений командою WebCrafters
