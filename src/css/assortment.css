@@ -158,6 +158,12 @@ color: var(--color-emerald-darkest);
 border-color: var(--color-emerald-darkest);
 opacity: 0.6;
 }
+.assortment-image:hover,
+.assortment-image:focus {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+    outline: none;
+}
 
 
 
